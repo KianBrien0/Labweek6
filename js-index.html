@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="Style/style.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello Lab Corrector</h1>"); //using HTML tags
+		
+		//this is a var declare and value assigned
+		var name = "Random person";
+		//prompt (JS Example 1)
+		name = prompt("Enter your name");
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+		
+		var time; //declare vars
+		var day; 
+			
+		//taking in and parsing numbers
+		time = parseInt(prompt("Enter the current time using 1-24"));
+		day = parseInt(prompt("Pick a weekday or weekend day using 1-7 (1-4 Weekday)"));
+		
+		//IF and ELSE (JS Example 2)
+		if((time >18) && (day >5)){
+		//both sides need to evaluate to true, then display message
+			document.write("<br />Congrats you chose correctly");
+		}else{
+		//code to execute when the if statement evaluates to false
+			document.write("You can't be taken seriously, we prefer weekends here!");
+		}	
+		
+	</script>
+  </head>
+  <!-- class for my background colour of the first page -->
+  <body class="backcolor1">
+	<p>These are my examples of JS</p>
+	<!-- anchor tag for my second html page in the folder -->
+	<a href="page2.html">Next Page</a>
+	
+	
+  </body>
+</html>
